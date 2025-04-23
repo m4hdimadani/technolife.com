@@ -3,6 +3,7 @@
 import "swiper/css";
 import "swiper/css/pagination";
 
+
 import { Navigation, Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { roundedImg } from "../../../lib/images";
@@ -23,7 +24,7 @@ function RoundedSwiper() {
       >
         {roundedImg.map((img, index) => (
           <SwiperSlide key={index}>
-            <div className="">
+            <div className="pr-8 ">
               
                 <Image
                   src={img.src}
@@ -31,7 +32,7 @@ function RoundedSwiper() {
                   className="w-[132px] h-[132px] cursor-pointer border-sky-500 border-2 rounded-full p-2 hover:border-4"
                 />
              
-              <p>{img.title}</p>
+              <p className="text-center mt-5 ml-6 text-[#1b3570] font-bold">{img.title}</p>
             </div>
           </SwiperSlide>
         ))}

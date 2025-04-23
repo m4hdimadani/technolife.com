@@ -1,11 +1,13 @@
-import BannerSwiper from "../molcules/BannerSwiper";
-import RoundedSwiper from "../molcules/RoundedSwiper";
+import BannerSwiper from "../atoms/BannerSwiper";
+import ProductsOff from "../molcules/ProductsOff";
+import RoundedSwiper from "../atoms/RoundedSwiper";
 
 function Main() {
   return (
     <div>
       <BannerSwiper />
       <RoundedSwiper />
+      <ProductsOff />
     </div>
   );
 }

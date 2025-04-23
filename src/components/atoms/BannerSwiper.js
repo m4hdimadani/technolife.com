@@ -33,7 +33,7 @@ function BannerSwiper() {
       >
         {images.map((img, index) => (
           <SwiperSlide key={index}>
-            <div>
+            <div className="cursor-pointer">
               <Image src={img.src} alt={img.alt} />
             </div>
           </SwiperSlide>
