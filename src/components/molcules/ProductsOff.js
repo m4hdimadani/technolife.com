@@ -8,7 +8,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { IoIosArrowBack } from "react-icons/io";
 import Image from "next/image";
 import { imagesOff } from "../../../lib/imagesOff";
-import CountDown from "../../../utils/CountDown";
+
 
 function ProductsOff() {
   return (
@@ -33,7 +33,7 @@ function ProductsOff() {
                     <span className="font-bold">{img.countDown}</span>
                   </div>
                 </div>
-                <div className="border-l-2 border-[#d8d3e4] ">
+                <div className="border-l-2 border-[#d8d3e4] cursor-pointer">
                   <div>
                     <Image
                       src={img.src}

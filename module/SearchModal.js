@@ -2,10 +2,11 @@ import { TbAdjustmentsSearch } from "react-icons/tb";
 
 
 
+
 function SearchModal() {
   return (
-    <div className="bg-white w-[652px] h-[144px] z-50">
-      <div>
+    <div className="w-[652px] h-[326px] bg-white rounded-2xl text-[#666666]">
+      <div >
         <TbAdjustmentsSearch />
         <p>جستوجو برای ...</p>
       </div>

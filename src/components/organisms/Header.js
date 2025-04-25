@@ -2,7 +2,9 @@
 
 import Image from "next/image";
 import logo from "../../../public/img/static_logo_techno_new.svg";
+import banner from "../../../public/img/banner_TopGifDesktop_qdHLTo_673f3ebe-e9fa-45f0-891b-9324c853dfab.gif";
 import SearchModal from "../../../module/SearchModal";
+import styles from "../../../module/SearchModal.module.css";
 
 import { CiSearch } from "react-icons/ci";
 import { LuShoppingCart } from "react-icons/lu";
@@ -20,13 +22,16 @@ function Header() {
 
   return (
     <>
-      <div className="mt-10 flex justify-around gap-[700px]">
+      <div>
+        <Image src={banner} alt="banner" />
+      </div>
+      <div className="mt-5 flex justify-around gap-[700px]">
         <div className="flex gap-10 items-center mr-8">
           <div>
             <Image src={logo} alt="logo" width={110} height={41.25} />
           </div>
-          <div className="bg-[#f0f0f0] inline w-[652px] h-[56px] rounded-sm">
-            <div className="p-[10px] pr-[20px] flex gap-5">
+          <div className="bg-[#f0f0f0] inline w-[652px] h-[56px] rounded-sm relative">
+            <div className="p-[10px] pr-[20px] flex gap-5  input_modal " >
               <CiSearch className="w-[30px] h-[30px] text-[#aaa8a8]" />
               <input
                 type="text"
@@ -36,8 +41,8 @@ function Header() {
               />
             </div>
             {isOpenModal ? (
-              <div className="z-50">
-                <SearchModal />
+              <div className={styles.modal}>
+                <SearchModal/>
               </div>
             ) : null}
           </div>
@@ -54,32 +59,34 @@ function Header() {
         </div>
       </div>
       <div className="mt-5">
-        <div >
+        <div>
           <ul className="flex items-center mr-20 gap-10 text-[#666666] text-sm">
             <li className="cursor-pointer flex items-center gap-2 hover:bg-sky-100 w-[163px] h-[40px] rounded-xl pr-2">
-              <GiHamburgerMenu className="w-[20px] h-[20px]"/>
+              <GiHamburgerMenu className="w-[20px] h-[20px]" />
               <span> دسته بندی محصولات</span>
             </li>
             <li className="cursor-pointer flex items-center gap-2">
-            <BiSolidOffer className="w-[20px] h-[20px]"/>
+              <BiSolidOffer className="w-[20px] h-[20px]" />
               <span>تکنوآف</span>
             </li>
             <li className="cursor-pointer flex items-center gap-2">
-              <CiShoppingBasket className="w-[20px] h-[20px]"/>
+              <CiShoppingBasket className="w-[20px] h-[20px]" />
               <span>خرید سازمانی</span>
             </li>
             <li className="cursor-pointer flex items-center gap-2">
-              <FaBoxOpen className="w-[20px] h-[20px]"/>
+              <FaBoxOpen className="w-[20px] h-[20px]" />
               <span>کارت هدیه</span>
             </li>
             <li className="cursor-pointer flex items-center gap-2">
-              <CiWallet className="w-[20px] h-[20px]"/>
+              <CiWallet className="w-[20px] h-[20px]" />
               <span>خرید اقساطی</span>
             </li>
             <li className="cursor-pointer flex items-center gap-2">
-              <PiCoinsLight className="w-[20px] h-[20px]"/>
+              <PiCoinsLight className="w-[20px] h-[20px]" />
               <span>خرید طلا دیجیتال</span>
-              <p className="text-[#9f1853] bg-[#ffd6e8] rounded-xl text-sm w-[38px] h-[18px] text-center pb-6">جدید</p>
+              <p className="text-[#9f1853] bg-[#ffd6e8] rounded-xl text-sm w-[38px] h-[18px] text-center pb-6">
+                جدید
+              </p>
             </li>
             <li className="cursor-pointer flex items-center gap-2">
               <span>فروشنده شو</span>
