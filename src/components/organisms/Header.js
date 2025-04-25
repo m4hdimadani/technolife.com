@@ -48,12 +48,12 @@ function Header() {
           </div>
         </div>
         <div className="flex gap-8">
-          <div className="flex gap-5 w-[159.52px] h-[40px] border-[1px] justify-center pb-2 rounded-[8px] items-center">
+          <div className="flex gap-5 w-[159.52px] h-[40px] cursor-pointer border-[1px] justify-center pb-2 rounded-[8px] items-center">
             <span className="text-[#212121]">ورود</span>
             <span className="text-[#212121]">|</span>
             <span className="text-[#212121] ">ثبت نام</span>
           </div>
-          <div className="w-[40px] h-[40px] border-[1px] flex items-center justify-center rounded-xl border-[#a1a1a1]">
+          <div className="w-[40px] h-[40px] border-[1px] flex items-center cursor-pointer justify-center rounded-xl border-[#a1a1a1]">
             <LuShoppingCart className="w-[24px] h-[24px] text-[#605f5f]" />
           </div>
         </div>

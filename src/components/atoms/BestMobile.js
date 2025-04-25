@@ -35,13 +35,13 @@ const best = [
 
 function BestMobile() {
   return (
-    <div className="mt-10 ">
+    <div className="mt-10  ">
       <div className=" text-center text-2xl font-bold  ">
         <h1>برترین‌های موبایل</h1>
       </div>
-      <div className="flex justify-center mt-10 gap-10">
+      <div className="flex justify-center mt-10 gap-10 ">
         {best.map((i,index) => (
-            <div key={index}>
+            <div key={index} className="cursor-pointer">
                 <div>
                     <Image src={i.src} alt={i.alt}/>
                 </div>
