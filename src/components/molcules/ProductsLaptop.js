@@ -7,7 +7,6 @@ import { Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { IoIosArrowBack } from "react-icons/io";
 import Image from "next/image";
-import { imagesSmart } from "../../../lib/imagesSmart";
 import { imageLaptop } from "../../../lib/imageLaptop";
 
 

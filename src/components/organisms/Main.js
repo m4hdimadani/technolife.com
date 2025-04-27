@@ -7,6 +7,10 @@ import BestMobile from "../atoms/BestMobile";
 import BannerSingl from "../atoms/BannerSingl";
 import ProductsLaptop from "../molcules/ProductsLaptop";
 import BannerBestLaptop from "../atoms/BannerBestLaptop";
+import BannerMobile from "../atoms/BannerMobile";
+import Airpoud from "../atoms/Airpoud";
+import BrandTop from "../atoms/BrandTop";
+import ProductsComputer from "../molcules/ProductsComputer";
 
 function Main() {
   return (
@@ -20,6 +24,10 @@ function Main() {
       <BannerSingl />
       <ProductsLaptop />
       <BannerBestLaptop />
+      <BannerMobile />
+      <Airpoud />
+      <BrandTop />
+      <ProductsComputer />
     </div>
   );
 }
