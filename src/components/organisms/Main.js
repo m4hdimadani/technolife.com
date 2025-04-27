@@ -11,6 +11,9 @@ import BannerMobile from "../atoms/BannerMobile";
 import Airpoud from "../atoms/Airpoud";
 import BrandTop from "../atoms/BrandTop";
 import ProductsComputer from "../molcules/ProductsComputer";
+import Home from "../atoms/Home";
+import ProductsAccessories from "../molcules/ProductsAccessories";
+import ProductsHome from "../molcules/ProductsHome";
 
 function Main() {
   return (
@@ -28,6 +31,9 @@ function Main() {
       <Airpoud />
       <BrandTop />
       <ProductsComputer />
+      <Home />
+      <ProductsAccessories />
+      <ProductsHome />
     </div>
   );
 }

@@ -23,7 +23,7 @@ function CountDown({ props }) {
 
   return (
     <div>
-      <div className="text-red-700">{getFormattedTime(time)}</div>
+      <div className="text-red-700  ">{getFormattedTime(time)}</div>
       <div></div>
     </div>
   );
