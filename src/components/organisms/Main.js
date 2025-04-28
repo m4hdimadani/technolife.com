@@ -14,6 +14,7 @@ import ProductsComputer from "../molcules/ProductsComputer";
 import Home from "../atoms/Home";
 import ProductsAccessories from "../molcules/ProductsAccessories";
 import ProductsHome from "../molcules/ProductsHome";
+import Weblog from "../molcules/Weblog";
 
 function Main() {
   return (
@@ -34,6 +35,7 @@ function Main() {
       <Home />
       <ProductsAccessories />
       <ProductsHome />
+      <Weblog />
     </div>
   );
 }

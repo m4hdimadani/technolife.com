@@ -24,7 +24,7 @@ function BrandTop() {
                 <div  className="flex items-center">
                   <SwiperSlide key={index}>
                     <div className="w-[196px] h-[88px]  m-auto border-l border-[#d3d8e4]">
-                      <Image src={i.src} alt={i.alt} className="w-[100px] h-[80px] m-auto"/>
+                      <Image src={i.src} alt={i.alt} className="w-[100px] h-[80px] m-auto cursor-pointer"/>
                     </div>
                   </SwiperSlide>
                 </div>

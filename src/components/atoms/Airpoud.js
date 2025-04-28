@@ -19,7 +19,7 @@ function Airpoud() {
         </h1>
 
         <div>
-          <ul className="flex justify-center gap-10 text-center font-bold">
+          <ul className="flex justify-center gap-10 text-center font-bold cursor-pointer">
             <li>
               <Image src={one} alt="one" />
               <a href="#">انکر</a>
@@ -51,7 +51,7 @@ function Airpoud() {
           </ul>
         </div>
       </div>
-      <div className="mt-20 flex gap-8 justify-center">
+      <div className="mt-20 flex gap-8 justify-center cursor-pointer">
         <Image src={bTow} alt="bTow" className="w-[774px] h-[238.14px] rounded-2xl"/>
         <Image src={bOne} alt="bOne" className="w-[774px] h-[238.14px] rounded-2xl"/>
       </div>
