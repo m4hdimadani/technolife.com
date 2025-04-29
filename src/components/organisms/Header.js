@@ -11,7 +11,6 @@ import { LuShoppingCart } from "react-icons/lu";
 
 import { useState, useEffect } from "react";
 
-
 import { BiSolidOffer } from "react-icons/bi";
 import { CiShoppingBasket, CiWallet } from "react-icons/ci";
 import { FaBoxOpen } from "react-icons/fa6";
@@ -19,8 +18,9 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { PiCoinsLight } from "react-icons/pi";
 
 function Header() {
-  
   const [showMain, setShowMain] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
+  const [isOpenModal, setIsOpenModal] = useState(false);
 
   useEffect(() => {
     let lastScroll = window.scrollY;
@@ -52,16 +52,32 @@ function Header() {
             <div>
               <Image src={logo} alt="logo" width={110} height={41.25} />
             </div>
-            <div className="bg-[#f0f0f0] inline w-[652px] h-[56px] rounded-sm relative">
-              <div className="p-[10px] pr-[20px] flex gap-5  input_modal ">
-                <CiSearch className="w-[30px] h-[30px] text-[#aaa8a8]" />
-                <input
-                  type="text"
-                  placeholder="محصول، برند یا دسته مورد نظرتان را جستجو کنید"
-                  className="border-[#f0f0f0] w-[580px] h-[24] text-[#616161] focus:outline-[#f0f0f0]  focus:outline"
-                  
-                />
+            {isOpen && (
+              <div
+                className="fixed inset-0 bg-gray-900 opacity-30  z-40"
+                onClick={() => setIsOpen(false)}
+              ></div>
+            )}
+            <div className="relative z-50">
+              <div
+                className="bg-[#f0f0f0] inline-block w-[652px] h-[56px] rounded-sm"
+                onClick={() => setIsOpen(true)}
+              >
+                <div className="p-[10px] pr-[20px] flex gap-5 input_modal">
+                  <CiSearch className="w-[30px] h-[30px] text-[#aaa8a8]" />
+                  <input
+                    type="text"
+                    placeholder="محصول، برند یا دسته مورد نظرتان را جستجو کنید"
+                    className="bg-[#f0f0f0] border-none w-[580px] h-[24px] text-[#616161] focus:outline-none"
+                    onFocus={() => setIsOpen(true)}
+                  />
+                </div>
               </div>
+              {isOpen && (
+                <div className="absolute top-[60px]   z-40">
+                  <SearchModal />
+                </div>
+              )}
             </div>
           </div>
           <div className="flex gap-8 justify-center items-center">
