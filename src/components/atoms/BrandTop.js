@@ -20,9 +20,9 @@ function BrandTop() {
         <div className="w-[1382px] h-[136.76px] m-auto flex items-center">
           <Swiper slidesPerView={6} navigation={true} modules={[Navigation]}>
             <div >
-              {Logo.map((i, index) => (
+              {Logo.map((i) => (
                 <div  className="flex items-center">
-                  <SwiperSlide key={index}>
+                  <SwiperSlide >
                     <div className="w-[196px] h-[88px]  m-auto border-l border-[#d3d8e4]">
                       <Image src={i.src} alt={i.alt} className="w-[100px] h-[80px] m-auto cursor-pointer"/>
                     </div>
