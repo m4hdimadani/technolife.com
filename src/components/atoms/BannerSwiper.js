@@ -15,8 +15,8 @@ import { images } from "../../../lib/images";
 
 function BannerSwiper() {
   return (
-    <div className="w-[1900px] m-auto">
-         <Swiper
+    <div className="w-[1900px] m-auto mt-[200px]">
+      <Swiper
         slidesPerView={1}
         spaceBetween={30}
         effect={"fade"}
@@ -40,7 +40,7 @@ function BannerSwiper() {
         ))}
       </Swiper>
     </div>
-  )
+  );
 }
 
-export default BannerSwiper
+export default BannerSwiper;
