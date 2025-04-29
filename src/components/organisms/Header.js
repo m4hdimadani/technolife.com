@@ -19,7 +19,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { PiCoinsLight } from "react-icons/pi";
 
 function Header() {
-  const [isOpenModal, setIsOpenModal] = useState(false);
+  
   const [showMain, setShowMain] = useState(true);
 
   useEffect(() => {
@@ -59,14 +59,9 @@ function Header() {
                   type="text"
                   placeholder="محصول، برند یا دسته مورد نظرتان را جستجو کنید"
                   className="border-[#f0f0f0] w-[580px] h-[24] text-[#616161] focus:outline-[#f0f0f0]  focus:outline"
-                  onClick={() => setIsOpenModal(true)}
+                  
                 />
               </div>
-              {isOpenModal ? (
-                <div className={styles.modal}>
-                  <SearchModal />
-                </div>
-              ) : null}
             </div>
           </div>
           <div className="flex gap-8 justify-center items-center">
