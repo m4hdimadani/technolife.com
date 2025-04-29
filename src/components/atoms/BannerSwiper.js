@@ -15,7 +15,7 @@ import { images } from "../../../lib/images";
 
 function BannerSwiper() {
   return (
-    <div>
+    <div className="w-[1900px] m-auto">
          <Swiper
         slidesPerView={1}
         spaceBetween={30}

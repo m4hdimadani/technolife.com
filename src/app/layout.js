@@ -1,6 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "@/app/globals.css";
-
+import Header from "@/components/organisms/Header";
+import Footer from "@/components/organisms/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -24,9 +25,9 @@ export default function RootLayout({ children }) {
         suppressHydrationWarning
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        
-        {children}
-        
+        <Header />
+        <main>{children}</main>
+        <Footer />
       </body>
     </html>
   );

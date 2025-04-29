@@ -8,7 +8,7 @@ function Home() {
   return (
     <>
       <div className="w-full m-auto">
-        <div className="flex items-center gap-[6px] pb-10 pt-15 pr-40">
+        <div className="flex items-center gap-[6px] pb-10 pt-15  m-auto w-[1600px]">
           <h1 className="text-[22px] font-semibold">لوازم خانگی</h1>
           <p className="text-lg font-regular">خانه و آشپزخانه</p>
         </div>
