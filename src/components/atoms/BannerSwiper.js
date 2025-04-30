@@ -12,6 +12,7 @@ import { EffectFade, Navigation, Pagination, Autoplay } from "swiper/modules";
 
 import Image from "next/image";
 import { images } from "../../../lib/images";
+import { FaAngleLeft } from "react-icons/fa";
 
 function BannerSwiper() {
   return (
@@ -25,7 +26,7 @@ function BannerSwiper() {
           clickable: true,
         }}
         modules={[EffectFade, Navigation, Pagination, Autoplay]}
-        className="mySwiper"
+        className="mySwiper banner-swiper"
         autoplay={{
           delay: 5000,
           disableOnInteraction: false,

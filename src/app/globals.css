@@ -1,1 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700&display=swap");
+
 @import "tailwindcss";
+
+body {
+  font-family: "Vazirmatn", sans-serif;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 100%;
+  box-shadow: 0 0 14px -3px rgba(0, 0, 0, 0.22);
+  background-color: #fff !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  width: 30px !important;
+  height: 30px !important;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 14px !important;
+  color: #000 !important;
+}
+
+.banner-swiper .swiper-button-next {
+  left: 1700px !important;
+  color: red !important;
+  font-size: 20px !important;
+}
+
+.banner-swiper .swiper-button-prev {
+  right: 100px;
+}
+
+.banner-swiper .swiper-button-prev,
+.banner-swiper .swiper-button-next {
+  margin-top: 120px;
+  margin-right: 50px;
+}
+
+.banner-swiper .swiper-pagination-horizontal{
+  margin-left: 820px;
+  color: #fff;
+}
+
+.banner-swiper .swiper-button-prev:after,
+.banner-swiper .swiper-button-next:after {
+  width: 80px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
