@@ -40,11 +40,11 @@ function BannerSwiper() {
           </SwiperSlide>
         ))}
 
+          <div className="custom-next custom-nav">
+            <FaAngleRight />
+          </div>
         <div className="custom-prev custom-nav">
           <FaAngleLeft />
-        </div>
-        <div className="custom-next custom-nav">
-          <FaAngleRight />
         </div>
       </Swiper>
     </div>

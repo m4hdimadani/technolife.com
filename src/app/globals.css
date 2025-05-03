@@ -32,13 +32,9 @@ body {
   color: #000 !important;
 }
 
-
-
-
 .banner-swiper .swiper-pagination-horizontal {
   margin-left: 820px;
 }
-
 
 .banner-swiper .custom-nav {
   position: absolute;
@@ -61,33 +57,25 @@ body {
   margin-right: 30px;
 }
 
-
 .banner-swiper .custom-prev {
-  left: 20px;
-  top: 188px;
-  margin-left: 1680px;
-  transform: rotate(180deg);
-  
+ right: 25px;
 }
-
 
 .banner-swiper .custom-next {
-  right: 40px;
-  
+  right: 120px;
+  top: 188px;
+  transform: rotate(180deg);
 }
-
 
 .banner-swiper .custom-nav svg {
   color: black;
   font-size: 18px;
-  transform: rotate(180deg); 
+  transform: rotate(180deg);
 }
-
 
 .banner-swiper .custom-next svg {
   transform: rotate(0deg);
 }
-
 
 .banner-swiper:hover .custom-nav {
   opacity: 1;
