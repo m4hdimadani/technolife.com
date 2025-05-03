@@ -12,7 +12,7 @@ import { EffectFade, Navigation, Pagination, Autoplay } from "swiper/modules";
 
 import Image from "next/image";
 import { images } from "../../../lib/images";
-import { FaAngleLeft } from "react-icons/fa";
+import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 
 function BannerSwiper() {
   return (
@@ -21,7 +21,7 @@ function BannerSwiper() {
         slidesPerView={1}
         spaceBetween={30}
         effect={"fade"}
-        navigation={true}
+        navigation={{ nextEl: ".custom-next", prevEl: ".custom-prev" }}
         pagination={{
           clickable: true,
         }}
@@ -39,6 +39,13 @@ function BannerSwiper() {
             </div>
           </SwiperSlide>
         ))}
+
+        <div className="custom-prev custom-nav">
+          <FaAngleLeft />
+        </div>
+        <div className="custom-next custom-nav">
+          <FaAngleRight />
+        </div>
       </Swiper>
     </div>
   );
